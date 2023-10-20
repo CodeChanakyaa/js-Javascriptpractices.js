@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background: rgba(211, 208, 208, 0.475);
+    width: 100vw;
+    height: 100vh;
+    padding: 16px 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container .code {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    width: 48%;
+}
+
+.container .exe {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: rgb(0, 0, 0);
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.container .exe button {
+    width: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    background: rgb(0, 255, 0);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+textarea {
+    background: rgb(34, 33, 33);
+    border: none;
+    outline: none;
+    user-select: none;
+    width: 100%;
+    height: 28%;
+    margin: 8px 0;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .code #htmlcode {
+    color: rgba(255, 115, 0, 0.874);
+}
+
+.container .code #csscode {
+    color: rgba(0, 234, 255, 0.835);
+}
+
+.container .code #javascriptcode {
+    color: rgba(246, 255, 0, 0.835);
+
+}
+
+.container .exe #exeview {
+    height: calc(100vh - 4.2rem);
+    margin-top: 0.4rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .container .code {
+        width: 100%;
+    }
+
+    .container .exe {
+        width: 100%;
+    }
+}

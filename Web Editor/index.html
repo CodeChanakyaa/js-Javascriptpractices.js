@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="code">
+            <label for="htmlcode">HTML</label>
+            <textarea name="html" id="htmlcode" cols="30" rows="10" onkeyup="codeexe()"></textarea>
+
+            <label for="csscode">CSS</label>
+            <textarea name="css" id="csscode" cols="30" rows="10" onkeyup="codeexe()"></textarea>
+
+            <label for="javascriptcode">Javascript</label>
+            <textarea name="javascriptcode" id="javascriptcode" cols="30" rows="10"></textarea>
+        </div>
+        <div class="exe">
+            <button for="exeview" onclick="codeexe()">RUN</button>
+            <iframe id="exeview"></iframe>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
